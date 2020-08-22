@@ -1,0 +1,6 @@
+%h1 Users#index
+%p Find me in app/views/users/index.html.haml
+
+- @users.each do |user|
+  = attachment_image_tag user, :profile_image, fallback: "no-image.png"
+  = user.username
