@@ -21,7 +21,6 @@
   border: 3px solid #ddd;
   // box-shadow: 0 10px 25px rgba(0, 0, 0, .5);
   padding: 10px;
-  border-radius: 15px;
   &__name{
     font-size: 20px;
     text-align: center;
@@ -36,7 +35,7 @@
 
 
 .Userimage {
-  height: 150px;
   border-radius: 50%;
-  padding-bottom: 20px;
+  height: 135px;
+  padding: 8px;
 }
