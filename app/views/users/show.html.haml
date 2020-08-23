@@ -8,8 +8,7 @@
           .ShowMain__left__content__email
             = @user.email
       .ShowMain__left__content__profile
-        よろしくお願いします
-        -# = @user.profile
+        = @user.profile
         - if @user.id == current_user.id
           .ShowMain__left__content__edit
             = link_to "プロフィールを編集", edit_user_path(@user), class: "ShowMain__left__content__editButton"

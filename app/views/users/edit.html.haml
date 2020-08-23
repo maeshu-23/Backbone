@@ -1,3 +1,26 @@
-%h1 Users#edit
-%p Find me in app/views/users/edit.html.haml
+.newpage
+  .newpage__form
+    = form_for @user do |f|
+      .formfield
+        .formfield__label--normal
+          = f.label :ユーザーネーム
+        .formfield__input--normal
+          = f.text_field :username, autofocus: true, autocomplete: "username", placeholder: 'username'
+      .formfield
+        .formfield__label--normal
+          = f.label :メールアドレス
+        .formfield__input--normal
+          = f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'email'
+      .formfield
+        .formfield__label--normal
+          = f.label :プロフィール
+        .formfield__input--normal
+          = f.text_field :profile
+      .formfield
+        .formfield__label--normal
+          = f.label :プロフィール画像
+        .formfield__input--normal
+          = f.attachment_field :profile_image
+      .actions
+        = f.submit "更新", class: "Button UserButton"
 
