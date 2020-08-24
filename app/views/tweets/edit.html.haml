@@ -1,2 +1,17 @@
-%h1 Tweets#edit
-%p Find me in app/views/tweets/edit.html.haml
+.newpage
+  .newpage__title
+    投稿編集
+  .newpage__Tweetform
+    = form_for @tweet do |f|
+      .formfield
+        .formfield__label--normal
+          = f.label :タイトル
+        .formfield__input--normal
+          = f.text_field :title
+      .formfield
+        .formfield__label--normal
+          = f.label :投稿内容
+        .formfield__textarea
+          = f.text_area :body
+      .actions
+        = f.submit "更新する", class: "Button UserButton"

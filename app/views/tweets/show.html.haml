@@ -1,2 +1,15 @@
-%h1 Tweets#show
-%p Find me in app/views/tweets/show.html.haml
+.Tweetshow
+  .Tweetshow__user
+    .Tweetshow__user__main
+      = link_to user_path(@tweet.user) do
+        = attachment_image_tag @tweet.user, :profile_image, fallback: "no-image.png", class: "Tweetshow__image"
+      .Tweetshow__user__main__name
+        = link_to user_path(@tweet.user), class: "Tweetshow__user__main__Name" do
+          = @tweet.user.username
+        - if @tweet.user.id == current_user.id
+          = link_to "編集", edit_tweet_path(@tweet), class: "Tweetshow__user__main__edit"
+    .Tweetshow__user__sub
+      .Tweetshow__user__form
+        = @tweet.title
+      .Tweetshow__user__body
+        = simple_format @tweet.body
