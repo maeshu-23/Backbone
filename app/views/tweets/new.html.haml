@@ -1,0 +1,17 @@
+.newpage
+  .newpage__title
+    新規投稿
+  .newpage__Tweetform
+    = form_for @tweet do |f|
+      .formfield
+        .formfield__label--normal
+          = f.label :タイトル
+        .formfield__input--normal
+          = f.text_field :title
+      .formfield
+        .formfield__label--normal
+          = f.label :投稿内容
+        .formfield__textarea
+          = f.text_area :body
+      .actions
+        = f.submit "投稿する", class: "Button UserButton"

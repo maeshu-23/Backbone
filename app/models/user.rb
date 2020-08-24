@@ -6,4 +6,5 @@ class User < ApplicationRecord
 
   validates :username, presence: true, uniqueness: true
   attachment :profile_image
+  has_many :tweets, dependent: :destroy
 end
