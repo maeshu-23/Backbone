@@ -1,2 +1,15 @@
-%h1 Tweets#index
-%p Find me in app/views/tweets/index.html.haml
+.TweetMain
+  .TweetMain__form
+    - @tweets.each do |tweet|
+      .TweetMain__menu
+        .TweetMain__body
+          = link_to user_path(tweet.user) do
+            = attachment_image_tag tweet.user, :profile_image, fallback: "no-image.png", class: "Tweetshow__image"
+          .TweetMain__body__name
+            = link_to user_path(tweet.user), class: "TweetMain__body__Name" do
+              = tweet.user.username
+          .TweetMain__body__date
+            = tweet.updated_at.strftime("%Y-%m-%d %H:%M")
+        .TweetMain__title
+          = link_to tweet_path(tweet), class: "TweetMain__Title" do
+            = tweet.title
