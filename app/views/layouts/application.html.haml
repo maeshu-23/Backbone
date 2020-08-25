@@ -14,12 +14,14 @@
         Backbone
       - if user_signed_in?
         .Header__in
+          = link_to "投稿一覧", tweets_path, class: 'headersign'
+          = link_to  "新規投稿", new_tweet_path, class: "headersign"
           = link_to "ユーザー一覧", users_path, class: 'headersign'
-          -# = link_to "マイページ", "#", class: "headersign"
-          -# = link_to  "投稿する", "/posts/new", class: "headersign"
+          = link_to "マイページ", user_path(current_user), class: "headersign"
           = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'headersign'
       - else
         .Header__out
+          = link_to "投稿一覧", tweets_path, class: 'headersign'
           = link_to "ユーザー一覧", users_path, class: 'headersign'
           = link_to "ログイン", new_user_session_path, class: 'headersign'
           = link_to "新規登録", new_user_registration_path, class: 'headersign'
