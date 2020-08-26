@@ -9,7 +9,7 @@
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     = render 'layouts/notifications'
-    .Header
+    %header.Header
       = link_to root_path, class: "Header__logo" do
         Backbone
       - if user_signed_in?
