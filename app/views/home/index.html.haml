@@ -1,2 +1,23 @@
-%h1 Home#index
-%p Find me in app/views/home/index.html.haml
+.home
+  .home__title
+    Backbone
+  .home__body
+    "Backbone" それは思想・信条などの背景にあり、それを成り立たせている考え方・現在に至るまでのストーリーを指します。
+    %br
+    世の中にあるもの、また、あったものにも"Backbone"は存在します。"Backbone"を知ることにより、これまで曖昧に理解していたことが明確になったり
+    %br
+    より一層そのものに対しての知識が深まり、好感や親近感が持てるようになります。
+    %br
+    本アプリはあなたの知っている"Backbone"やそのワードに纏わる裏話などを投稿し、共有し合うアプリです。
+    %br
+    なぜ○○はできたのか、なぜ○○は有名になったのかなど、あなたが知っている"Backbone"がそれを知りたがっている誰かの手助けになるかもしれません！
+  .homemain
+    .home__btn
+      = link_to "ログイン", new_user_session_path, class: 'home__btn__link'
+    .home__btn
+      = link_to "新規登録", new_user_registration_path, class: 'home__btn__link'
+  
+    
+
+
+
