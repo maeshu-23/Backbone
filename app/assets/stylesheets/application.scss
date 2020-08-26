@@ -5,6 +5,8 @@
 @import "modules/show";
 @import "modules/tweetshow";
 @import "modules/tweetmain";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 
 
@@ -19,36 +21,34 @@
   font-weight: 900;
   font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
   letter-spacing: 1px;
+  position: fixed;
   &__logo{
-    font-size: 30px;
-    padding: 14px;
+    font-size: 32px;
+    padding: 12px;
     text-decoration: none;
     color: black;
+    margin-left: 17px;
   }
   .headersign{
     color: seashell;
     padding-right: 15px;
   }
   &__in{
-    font-size: 16px;
-    padding: 20px;
-    .headersign {
+    padding: 15px;
+    .headerSign {
       text-decoration: none;
-      border: 3px solid white;
-      padding: 10px;
-      margin-right: 10px;
+      margin-right: 35px;
       color: black;
+      font-size: 25px;
     }
   }
   &__out{
-    font-size: 16px;
     padding: 20px;
-    .headersign {
+    .headerSign {
       text-decoration: none;
-      border: 3px solid white;
-      padding: 10px;
-      margin-right: 10px;
+      margin-right: 35px;
       color: black;
+      font-size: 25px;
     }
   }
 }

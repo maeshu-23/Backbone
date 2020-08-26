@@ -1,41 +1,53 @@
 .UserMain {
-  height: calc(100vh - 65px);
+  // height: calc(100vh - 65px);
   // width: 100%;
   background-color: whitesmoke;
-  padding: 20px;
-  &__menu{
-    font-size: 30px;
-    font-weight: 800;
-    padding-left: 30px;
-  }
+  overflow: scroll;
+  padding-top: 65px;
 }
 
 .Userlists{
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
+  width: 550px;
+  margin: 0 auto;
+  // display: flex;
+  // justify-content: space-around;
+  // margin-top: 50px;
+  background-color: white;
+  font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
 }
 
 
 .Userlist {
-  border: 3px solid #ddd;
+  border-top: 2px solid #ddd;
   // box-shadow: 0 10px 25px rgba(0, 0, 0, .5);
-  padding: 10px;
+  padding: 17px 10px 0 13px;
+  display: flex;
   &__name{
-    font-size: 20px;
-    text-align: center;
-    font-weight: 300;
-    padding-bottom: 20px;
+    font-size: 27px;
+    font-weight: 600;
+    padding: 30px 0 10px 40px;
   }
   &__name a {
     color: black;
     text-decoration: none;
   }
+  &__profile{
+    font-size: 13px;
+    color: gray;
+    padding-top: 13px;
+  }
 }
-
 
 .Userimage {
   border-radius: 50%;
-  height: 135px;
-  padding: 8px;
+  height: 125px;
+  // padding: 8px;
+  border: 2px solid #ddd;
+}
+
+.Usercount {
+  font-size: 13px;
+  text-align: right;
+  padding-right: 10px;
+  font-weight: 600;
 }

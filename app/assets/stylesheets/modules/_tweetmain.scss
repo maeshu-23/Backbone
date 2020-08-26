@@ -2,16 +2,19 @@
   height: calc(100vh - 65px);
   // width: 100%;
   background-color: whitesmoke;
+  padding-top: 65px;
   &__form{
     height: 100%;
     width: 550px;
     margin: 0 auto;
     background-color: white;
     overflow: scroll;
+    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
   }
   &__menu{
     padding: 5px;
     margin-bottom: 13px;
+    border-top: 1px solid #ddd;
   }
   &__body{
     display: flex;
