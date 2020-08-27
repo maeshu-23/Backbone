@@ -1,5 +1,13 @@
 .newpage
   .newpage__form
+    - if @user.errors.any?
+      .notification.is-danger
+        %h2
+          = pluralize(@user.errors.count, "件の")
+          エラーが発生しました。
+        %ul
+          - @user.errors.full_messages.each do |message|
+            %li= message
     = form_for @user do |f|
       .formfield
         .formfield__label--normal

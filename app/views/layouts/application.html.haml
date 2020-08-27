@@ -8,7 +8,6 @@
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    = render 'layouts/notifications'
     %header.Header
       = link_to root_path, class: "Header__logo" do
         Backbone
@@ -34,4 +33,5 @@
             = icon('fas','sign-in-alt')
           = link_to new_user_registration_path, class: 'headerSign' do
             = icon('fas','user-plus')
+    = render 'layouts/notifications'
     = yield

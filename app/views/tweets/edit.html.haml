@@ -1,6 +1,14 @@
 .newpage
   .newpage__title
     投稿編集
+  - if @tweet.errors.any?
+    .notification.is-danger
+      %h2
+        = pluralize(@tweet.errors.count, "件の")
+        エラーが発生しました。
+      %ul
+        - @tweet.errors.full_messages.each do |message|
+          %li= message
   .newpage__Tweetform
     = form_for @tweet do |f|
       .formfield
