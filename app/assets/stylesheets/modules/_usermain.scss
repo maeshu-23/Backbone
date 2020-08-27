@@ -1,16 +1,12 @@
 .UserMain {
-  // height: calc(100vh - 65px);
-  // width: 100%;
   background-color: whitesmoke;
+  height: calc(100vh - 65px);
   overflow: scroll;
 }
 
 .Userlists{
   width: 550px;
   margin: 0 auto;
-  // display: flex;
-  // justify-content: space-around;
-  // margin-top: 50px;
   background-color: white;
   font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
 }
@@ -18,7 +14,6 @@
 
 .Userlist {
   border-top: 2px solid #ddd;
-  // box-shadow: 0 10px 25px rgba(0, 0, 0, .5);
   padding: 17px 10px 0 13px;
   display: flex;
   &__name{

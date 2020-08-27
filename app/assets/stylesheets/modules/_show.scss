@@ -12,6 +12,7 @@
     background-color: white;
     margin-right: 100px;
     font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    box-shadow: 0 0 10px rgba(41,41,41,0.2);
     &__image{
       height: 120px;
       border-radius: 50%;
@@ -52,6 +53,9 @@
     height: 600px;
     background-color: white;
     font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    box-shadow: 0 0 10px rgba(41,41,41,0.2);
+    overflow: hidden;
+    overflow: scroll;
     &__title{
       height: 40px;
       padding: 18px;

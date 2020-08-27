@@ -6,7 +6,7 @@
   &__title {
     font-size: 35px;
     font-weight: 600;
-    padding: 25px 35px;
+    padding: 20px 30px;
     height: 60px;
     letter-spacing: 0.05em;
     text-align: center;
@@ -14,12 +14,12 @@
   &__form {
     width: 450px;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 20px;
   }
   &__Tweetform{
     width: 700px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 10px;
   }
 }
 
@@ -131,3 +131,7 @@
   }
 }
 
+.notification.is-danger {
+  text-align: center;
+  color: red;
+}

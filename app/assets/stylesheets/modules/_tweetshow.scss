@@ -12,6 +12,7 @@
     margin: 0 auto;
     padding: 10px;
     font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    box-shadow: 0 0 10px rgba(41,41,41,0.2);
     &__main{
       display: flex;
       padding-top: 10px;
@@ -48,7 +49,7 @@
       padding: 14px 15px 0 15px;
       border-top: 1px solid #ddd;
       p {
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 400;
       }
     }
