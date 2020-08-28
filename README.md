@@ -1,10 +1,13 @@
 # README
   <img width="1440" alt="topview" src="https://user-images.githubusercontent.com/67140111/91529519-66cd4d00-e944-11ea-9119-14370a4f6dcb.png">
+  
 
 ## アプリ概要
   自分の知っているワードに纏わるバックボーン・裏話・プチ雑学などを投稿し、共有し合うアプリです。
+  
 
 ## 制作背景
+
   
 ## DEMO
   - 新規登録画面<img width="1440" alt="new" src="https://user-images.githubusercontent.com/67140111/91548465-5dea7480-e960-11ea-9c76-1885723a5894.png">
@@ -18,5 +21,11 @@
   - ユーザー編集機能![edit](https://user-images.githubusercontent.com/67140111/91583912-cea78600-e98c-11ea-8dc7-a8fa381bc05f.gif)
   
   - いいね機能![favorite](https://user-images.githubusercontent.com/67140111/91585006-740f2980-e98e-11ea-8e83-ac6d5865dbb5.gif)
+ 
+## 工夫したポイント
 
 
+## 今後実装したい機能
+
+
+## DB設計
