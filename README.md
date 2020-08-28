@@ -7,5 +7,6 @@
 ## 制作背景
   
 ## DEMO
-  ゲストユーザーとしてログインして頂けます![guedtlog](https://user-images.githubusercontent.com/67140111/91547241-98eba880-e95e-11ea-8ae6-462e187badc6.gif)  
-  あ
+  新規登録画面<img width="1440" alt="new" src="https://user-images.githubusercontent.com/67140111/91548465-5dea7480-e960-11ea-9c76-1885723a5894.png">
+
+  ログイン画面からゲストユーザーとしてログインして頂けます![guedtlog](https://user-images.githubusercontent.com/67140111/91547241-98eba880-e95e-11ea-8ae6-462e187badc6.gif)  
