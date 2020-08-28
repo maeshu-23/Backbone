@@ -42,3 +42,5 @@
           = f.password_field :password_confirmation, autocomplete: "new-password", placeholder: 'password confirmation'
       .actions
         = f.submit "ログイン", class: "Button UserButton"
+      .actions
+        = link_to 'ゲストログイン(閲覧用)', home_guest_sign_in_path, method: :post, class: "GuestButton"

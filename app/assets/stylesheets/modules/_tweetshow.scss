@@ -38,11 +38,18 @@
       padding-left: 10px;
       display: flex;
       justify-content: space-between;
+      &__favorite{
+        font-size: 19px;
+        margin: 11px 12px 0 0;
+      }
+    }
+    &__font{
+      display: flex;
       &__edit{
-        margin: 10px 15px 0 0;
+        margin: 9px 27px 0 0;
         text-decoration: none;
         color: black;
-        font-size: 22px;
+        font-size: 20px;
       }
     }
     &__body{
@@ -56,8 +63,13 @@
   }
   &__image{
     height: 45px;
+    width: 45px;
     border-radius: 50%;
     margin: 0 11px 0 10px;
     border: 1px solid #ddd;
   }
+}
+.ShowFavorite {
+  text-decoration: none;
+  color: lightcoral;
 }
