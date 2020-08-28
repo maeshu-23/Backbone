@@ -7,4 +7,5 @@
 ## 制作背景
   
 ## DEMO
-  ![guedtlog](https://user-images.githubusercontent.com/67140111/91547241-98eba880-e95e-11ea-8ae6-462e187badc6.gif)
+  ゲストユーザーとしてログインして頂けます![guedtlog](https://user-images.githubusercontent.com/67140111/91547241-98eba880-e95e-11ea-8ae6-462e187badc6.gif)  
+  あ
