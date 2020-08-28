@@ -11,8 +11,17 @@
     .Tweetshow__user__sub
       .Tweetshow__user__form
         = @tweet.title
-        - if @tweet.user.id == current_user.id
-          = link_to edit_tweet_path(@tweet), class: "Tweetshow__user__form__edit" do
-            = icon('fas', 'edit')
+        .Tweetshow__user__font
+          - if @tweet.user.id == current_user.id
+            = link_to edit_tweet_path(@tweet), class: "Tweetshow__user__font__edit" do
+              = icon('fas', 'edit')
+          .Tweetshow__user__form__favorite
+            - if current_user.already_favorited?(@tweet)
+              = link_to tweet_favorites_path(@tweet), method: :delete, class: "ShowFavorite" do
+                = icon('fas', 'heart')
+            - else
+              = link_to tweet_favorites_path(@tweet), method: :post, class: "ShowFavorite" do
+                = icon('far', 'heart')
+            = @tweet.favorites.count
       .Tweetshow__user__body
         = simple_format @tweet.body

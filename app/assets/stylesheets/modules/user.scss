@@ -14,7 +14,7 @@
   &__form {
     width: 450px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 50px;
   }
   &__Tweetform{
     width: 700px;
@@ -134,4 +134,21 @@
 .notification.is-danger {
   text-align: center;
   color: red;
+}
+
+.GuestButton {
+  margin-top: 30px;
+  color: #fff;
+  background-color: orange;
+  display: inline-block;
+  height: 50px;
+  width: 350px;
+  margin-top: 40px;
+  padding: 0 30px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  text-decoration: none;
 }
