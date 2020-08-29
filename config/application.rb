@@ -9,6 +9,7 @@ Bundler.require(*Rails.groups)
 module Backbone
   class Application < Rails::Application
     config.i18n.default_locale = :ja
+    config.assets.initialize_on_precompile = false
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
     config.generators do |g|
