@@ -23,9 +23,48 @@
   - いいね機能![favorite](https://user-images.githubusercontent.com/67140111/91585006-740f2980-e98e-11ea-8e83-ac6d5865dbb5.gif)
  
 ## 工夫したポイント
+  見やすさ・分かりやすさ・使いやすさの3点を重視して作成しました。  
+  特に、マイページではプロフィール画像やプロフィールを設定できるようにして、普段使い慣れてるようなSNSアプリに近づけました。
 
 
 ## 今後実装したい機能
+  - 検索機能  
+  - フォロー機能
 
 
 ## DB設計
+  ### usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|username|string|null: false, unique: true|
+|email|string|null: false, unique: true|
+|password|string|null: false|
+
+
+#### Association
+- has_many :tweets, dependent: :destroy
+- has_many :favorites, dependent: :destroy
+
+
+
+### tweetsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false|
+|title|string|null: false|
+|body|text|null: false|
+
+#### Association
+- belongs_to :user
+- has_many :favorites, dependent: :destroy
+
+
+### favoritesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false|
+|tweet_id|integer|null: false|
+
+#### Association
+- belongs_to :user
+- belongs_to :tweet
