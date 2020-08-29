@@ -7,8 +7,4 @@ class Tweet < ApplicationRecord
     validates :title
     validates :body
   end
-
-  # def already_favorited?(tweet)
-  #   self.favorites.exists?(tweet_id: tweet.id)
-  # end
 end
