@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_27_063550) do
+ActiveRecord::Schema.define(version: 2020_08_29_155203) do
 
   create_table "favorites", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "user_id"
@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(version: 2020_08_27_063550) do
     t.integer "user_id"
     t.string "title"
     t.text "body"
-    t.string "image_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
